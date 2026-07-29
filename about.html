@@ -1567,6 +1567,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const items = section.querySelectorAll(".listing-works__item");
         const btn = section.querySelector(".showMoreBtn");
 
+        if (!btn) return;
+
         let visible = 2;
 
         items.forEach((item, i) => {
@@ -1574,18 +1576,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (items.length <= 2) {
-            btn.style.display = "none";
+            btn.closest(".block-watcher").style.display = "none";
             return;
         }
 
         btn.addEventListener("click", () => {
+
+            // Reveal one more item
             if (visible < items.length) {
                 items[visible].style.display = "";
                 visible++;
             }
 
+            // Hide button when finished
             if (visible >= items.length) {
-                btn.style.display = "none";
+                btn.closest(".block-watcher").style.display = "none";
             }
         });
 

@@ -1040,8 +1040,8 @@
         width: 100%;
         height: .6em;
         background-color: var(--c-brand-primary);
-        -webkit-mask-image: url(/wp-content/themes/wfn/assets/css/./../images/svg/dashed.svg);
-        mask-image: url(/wp-content/themes/wfn/assets/css/./../images/svg/dashed.svg);
+        -webkit-mask-image: url(assets/svgs/dashes.svg);
+        mask-image: url(assets/svgs/dashes.svg);
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         -webkit-mask-size: auto 100%;
@@ -1088,8 +1088,8 @@
         width: 100%;
         height: .6em;
         background-color: var(--c-brand-primary);
-        -webkit-mask-image: url(/wp-content/themes/wfn/assets/css/./../images/svg/dashed.svg);
-        mask-image: url(/wp-content/themes/wfn/assets/css/./../images/svg/dashed.svg);
+        -webkit-mask-image: url(assets/svgs/dashes.svg);
+        mask-image: url(assets/svgs/dashes.svg);
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         -webkit-mask-size: auto 100%;

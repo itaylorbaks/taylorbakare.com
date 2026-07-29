@@ -978,8 +978,8 @@ We feel the best when our Clients are winning.</p>
             </div>
 
             <div style="text-align:center; margin-top:4rem;">
-    <button id="showMoreBtn"
-        style="padding:16px 40px; background:#000; color:#fff; border:none; cursor:pointer; font-size:16px; border-radius:999px;">
+    <button class="showMoreBtn"
+        style="padding:16px 40px; background:#000; color:#fff; border:none; cursor:pointer; border-radius:999px;">
         Show More
     </button>
 </div>
@@ -1114,8 +1114,8 @@ We feel the best when our Clients are winning.</p>
                     </div>
                                             </div>
                                             <div style="text-align:center; margin-top:4rem;">
-    <button id="showMoreBtn"
-        style="padding:16px 40px; background:#000; color:#fff; border:none; cursor:pointer; font-size:16px; border-radius:999px;">
+    <button class="showMoreBtn"
+        style="padding:16px 40px; background:#000; color:#fff; border:none; cursor:pointer; border-radius:999px;">
         Show More
     </button>
 </div>
@@ -1521,27 +1521,36 @@ var wpcf7_recaptcha = {"sitekey":"6Le9p9cUAAAAAP3NDlT5dsNjdwVoQbC7tBq9_-bM","act
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".listing-works__item");
-    const btn = document.getElementById("showMoreBtn");
 
-    let visible = 2;
+    document.querySelectorAll(".listing-works").forEach(section => {
 
-    items.forEach((item, index) => {
-        if (index >= visible) {
-            item.style.display = "none";
-        }
-    });
+        const items = section.querySelectorAll(".listing-works__item");
+        const btn = section.querySelector(".showMoreBtn");
 
-    btn.addEventListener("click", () => {
-        if (visible < items.length) {
-            items[visible].style.display = "";
-            visible++;
-        }
+        let visible = 2;
 
-        if (visible >= items.length) {
+        items.forEach((item, i) => {
+            if (i >= visible) item.style.display = "none";
+        });
+
+        if (items.length <= 2) {
             btn.style.display = "none";
+            return;
         }
+
+        btn.addEventListener("click", () => {
+            if (visible < items.length) {
+                items[visible].style.display = "";
+                visible++;
+            }
+
+            if (visible >= items.length) {
+                btn.style.display = "none";
+            }
+        });
+
     });
+
 });
 </script>
 </body>

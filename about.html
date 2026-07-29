@@ -976,12 +976,15 @@ We feel the best when our Clients are winning.</p>
                 </a>
             </div> -->
             </div>
+
             <div style="text-align:center; margin-top:4rem;">
     <button id="showMoreBtn"
         style="padding:16px 40px; background:#000; color:#fff; border:none; cursor:pointer; font-size:16px; border-radius:999px;">
         Show More
     </button>
 </div>
+
+            
 </section>
 
 <section class="listing-works" data-scroll-section>
@@ -1508,32 +1511,6 @@ var wpcf7_recaptcha = {"sitekey":"6Le9p9cUAAAAAP3NDlT5dsNjdwVoQbC7tBq9_-bM","act
 </script>
 <script type="text/javascript" src="https://wantedfornothing.com/wp-content/mmr/3ffd0656-1775731101.min.js" id="js-8-js"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".listing-works__items");
-    const btn = document.getElementById("showMoreBtn");
-
-    let visible = 2;
-
-    sections.forEach((section, i) => {
-        if (i >= visible) {
-            section.style.display = "none";
-        }
-    });
-
-    btn.onclick = function () {
-        if (visible < sections.length) {
-            sections[visible].style.display = "block";
-            visible++;
-        }
-
-        if (visible >= sections.length) {
-            btn.style.display = "none";
-        }
-    };
-});
-</script>
-
 </div>
 <div class="page-cursor js-cursor">
     <div class="page-cursor__inner">
@@ -1541,5 +1518,31 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="page-cursor__title">Click me!</div>
     </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".listing-works__item");
+    const btn = document.getElementById("showMoreBtn");
+
+    let visible = 2;
+
+    items.forEach((item, index) => {
+        if (index >= visible) {
+            item.style.display = "none";
+        }
+    });
+
+    btn.addEventListener("click", () => {
+        if (visible < items.length) {
+            items[visible].style.display = "";
+            visible++;
+        }
+
+        if (visible >= items.length) {
+            btn.style.display = "none";
+        }
+    });
+});
+</script>
 </body>
 </html>

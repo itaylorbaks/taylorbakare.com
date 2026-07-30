@@ -5,12 +5,12 @@
   "op": 60,
   "w": 400,
   "h": 391,
-  "nm": "Plan",
+  "nm": "XWeb",
   "ddd": 0,
   "assets": [
     {
       "id": "comp_0",
-      "nm": "plan-01",
+      "nm": "XWeb-01",
       "fr": 30,
       "layers": [
         {
@@ -2041,7 +2041,7 @@
       "ddd": 0,
       "ind": 1,
       "ty": 0,
-      "nm": "plan-01",
+      "nm": "XWeb-01",
       "refId": "comp_0",
       "sr": 1,
       "ks": {
@@ -2087,7 +2087,7 @@
       "ddd": 0,
       "ind": 2,
       "ty": 5,
-      "nm": "Plan",
+      "nm": "XWeb",
       "sr": 1,
       "ks": {
         "o": {
@@ -2129,7 +2129,7 @@
                 "ps": [-60, -20],
                 "s": 45,
                 "f": "JWSans-Medium",
-                "t": "PLAN",
+                "t": "XWeb",
                 "ca": 0,
                 "j": 0,
                 "tr": 0,

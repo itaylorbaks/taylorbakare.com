@@ -11626,7 +11626,8 @@ body[data-scheme="7"] .block-values__background div {
 
 .block-slider__item:nth-child(2) .block-slider__item-img {
     width: 100%;
-    height: 100%
+    height: 100%;
+     object-fit: contain
 }
 
 .block-slider__item:nth-child(3) {
@@ -11645,7 +11646,8 @@ body[data-scheme="7"] .block-values__background div {
 
 .block-slider__item:nth-child(3) .block-slider__item-img {
     width: 100%;
-    height: 100%
+    height: 100%;
+     object-fit: contain
 }
 
 .block-slider__item:nth-child(4) {

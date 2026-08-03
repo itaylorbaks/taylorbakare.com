@@ -1,0 +1,7 @@
+Wpcf7 Submit Files:
+
+https://wantedfornothing.com/wp-content/mmr/e5913f5d-1775731102.min.js ("js-2-js")
+
+https://wantedfornothing.com/wp-content/mmr/3fa93b0c-1775731102.min.js ("js-2-js")
+
+class="wpcf7-form init"

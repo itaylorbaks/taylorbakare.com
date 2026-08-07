@@ -11621,7 +11621,8 @@ body[data-scheme="7"] .block-values__background div {
 }
 
 .block-slider__item:nth-child(2) .block-slider__item-img-wrap:before {
-    padding-bottom: 50.545%
+    padding-bottom: 50.545%;
+    padding-bottom: 90.545%
 }
 
 .block-slider__item:nth-child(2) .block-slider__item-img {

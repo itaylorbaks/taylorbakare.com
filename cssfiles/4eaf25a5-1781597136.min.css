@@ -11641,7 +11641,8 @@ body[data-scheme="7"] .block-values__background div {
 }
 
 .block-slider__item:nth-child(3) .block-slider__item-img-wrap:before {
-    padding-bottom: 50.13%
+    padding-bottom: 50.13%;
+    padding-bottom: 30.13%
 }
 
 .block-slider__item:nth-child(3) .block-slider__item-img {

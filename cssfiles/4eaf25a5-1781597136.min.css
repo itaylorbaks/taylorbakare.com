@@ -11636,12 +11636,12 @@ body[data-scheme="7"] .block-values__background div {
 
 @media (max-width: 1023px) {
     .block-slider__item:nth-child(3) {
-        width:67vw
+        width:60vw
     }
 }
 
 .block-slider__item:nth-child(3) .block-slider__item-img-wrap:before {
-    padding-bottom: 70.13%
+    padding-bottom: 50.13%
 }
 
 .block-slider__item:nth-child(3) .block-slider__item-img {

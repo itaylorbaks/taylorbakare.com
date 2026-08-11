@@ -10369,6 +10369,12 @@ body:not([data-scheme="0"]) .banner-hero__icon,body:not([data-scheme="0"]) .bloc
     filter: brightness(0)
 }
 
+body:not([data-scheme="0"]) .banner-hero__icon,body:not([data-scheme="0"]) .block2-slider__item-img,body:not([data-scheme="0"]) .block-sun__bg-icon,body:not([data-scheme="0"]) .block-sun__item-icon,body:not([data-scheme="0"]) .block-team__description-icon,body:not([data-scheme="0"]) .footer__copyright-img,body:not([data-scheme="0"]) .header__qr-img,body:not([data-scheme="0"]) .single-text-icon__icon {
+    -webkit-filter: brightness(0);
+    filter: brightness(0)
+}
+
+
 body:not([data-scheme="0"]) .banner-services__icon {
     -webkit-filter: brightness(100%);
     filter: brightness(100%)
